@@ -1,0 +1,31 @@
+//Pedir 2 numeros para o usuario
+//Verificar se o primeiro numero digitado e divisivel pelo segundo numero digitado
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int num1, num2;
+int resultado;
+
+int main (){
+
+  printf("Digite o primeiro numero: ");
+  scanf("%d", &num1);
+
+  printf("Digite o segundo numero: ");
+  scanf("%d", &num2);
+
+  if(num2 == 0){
+    printf("O numero %d nao e permetido", num2);
+  } else if (num1 % num2 == 0 ) {
+    resultado = num1 / num2;
+
+    printf ("O numero %d e divisivel por %d", num1, num2);
+    printf ("\nO resulado e %d", resultado);
+    
+  } else {
+    printf("O numero %d NAO e divisivel por %d", num1, num2);
+  }
+
+  return 0;
+}
